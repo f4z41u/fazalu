@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazalu Rahman</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      const originalName = "Fazalu Rahman";
+      const h1Element = document.querySelector('h1');
+
+      function shuffleString(str) {
+        const arr = str.split('');
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr.join('');
+      }
+
+      function updateHackerName() {
+        h1Element.textContent = shuffleString(originalName);
+      }
+
+      // Set interval with a shorter interval time (100 milliseconds)
+      const intervalId = setInterval(updateHackerName, 100);
+
+      // Stop the shuffling after 3 seconds and display the original name
+      setTimeout(function () {
+        clearInterval(intervalId); // Clear the interval
+        h1Element.textContent = originalName;
+      }, 1000); // 3000 milliseconds (3 seconds)
+    });
+  </script>
+</head>
+<body>
+  <h1 class="main-head">Fazalu Rahman</h1>
+
+  <p class="main-para">
+    <hr>
+  </p>
+
+  <p class="main-para">
+    <span class="head-span"> Who am I:</span>  I’m seeking a dynamic and growth-focused career in the realm of Application security. I’m committed to continuously advancing my skills through
+    hands-on learning opportunities, collaborative efforts, and cutting-edge research. With strong communication skills, I’m always ready to collaborate
+    and adapt to dynamic work environments.
+  </p>
+
+  <hr>
+
+  <p class="main-para">
+   <span class="main-span">Experience:</span>  <br> <br>
+    <span class="head-span"> Security Tester at 9ine Consulting </span><br>
+    Application Security Architecture Rapid7 Insight
+    Tenable Nessus Analytical Skills Regular Expressions Security
+    Threat Analysis. Vulnerability Assessment Incident Response.
+    Vulnerability Communication Bash OWASP ISO 27001
+    General Data Protection Regulation (GDPR). API Testing Web
+    Application Security Cybersecurity Information Security
+    Vulnerability Management Penetration Testing Network
+    Security <br> <br>
+    <span class="head-span">Security Consultant Intern at SecureLayer7</span> <br>
+    Web Application Pentesting Black Box, Grey Box & White Box,API Pentesting,Infrastructure Pentesting Internal & External,Android Application Pentesting,Reporting and Documentation
+  </p>
+  <hr>
+  
+  <p class="main-para">
+    <span class="main-span">Opensource Contributions</span>  <br> <br>
+     
+     1.Given talk on the topic Cyber Awareness and
+     Privacy at emmanuel college vazhichal <br>
+     2.Given a session on the topic Art of information
+     gathering (OSINT) to students (webinar)
+     Security <br>
+     3.Given workshop on IoT Security , Wi-Fi Pentesting
+     and so on
+   </p>
+   <hr>
+   <p class="main-para">
+    <span class="main-span">Co-Circular activities</span>  <br> <br>
+     
+     1.Core volunteer at Seasides conference, Goa, India <br>
+     2.Community volunteer at c0c0n, Kochi, India <br>
+     3.Chapter lead at ResetHacker, Kerala, India
+   </p>
+   <hr>
+   <p class="main-para">
+    <span class="main-span">Achievements</span>  <br> <br>
+     
+     1.Successfully completed 95+ rooms and placed at level 11 on tryhackme platform <br>
+     2.Secured 65th place out of 6483 teams in the Hackthebox cyber-Apocalypse 2023 CTF <br>
+     3.Runner - Secured third place in the Hackthebox Cyber Beckal organized by RedTeam Hacker Academy
+   </p>
+   <hr>
+   <h1 class="main-head">Reach out to me at f4z41u@gmail.com</h1>
+</body>
+</html>

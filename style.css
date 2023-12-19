@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "ShareFont"; /* Choose a unique font name */
+  src: url("ShareTechMono-Regular.ttf") format("truetype");
+}
+body {
+  background-color: black;
+  color: rgb(62, 223, 26);
+  font-family: "ShareFont";
+  text-align: center;
+  padding: 50px;
+}
+.main-head {
+  font-size: 250%;
+
+}
+.main-para {
+  font-size: 130%;
+  text-align: left;
+}
+.head-span {
+    color: white;
+}
+.sub-span {
+    margin-left: 145px;
+}
+.main-span {
+    font-size: 140% ;
+    color: white;
+}
