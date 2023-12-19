@@ -25,14 +25,14 @@
         h1Element.textContent = shuffleString(originalName);
       }
 
-      // Set interval with a shorter interval time (100 milliseconds)
+     
       const intervalId = setInterval(updateHackerName, 100);
 
-      // Stop the shuffling after 3 seconds and display the original name
+     
       setTimeout(function () {
-        clearInterval(intervalId); // Clear the interval
+        clearInterval(intervalId); 
         h1Element.textContent = originalName;
-      }, 1000); // 3000 milliseconds (3 seconds)
+      }, 1000); 
     });
   </script>
 </head>
