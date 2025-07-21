@@ -3,98 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fazalu Rahman</title>
+  <title>Fazalu Rahman | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css">
- 
-  <script>
-    
-    document.addEventListener('DOMContentLoaded', function () {
-      const originalName = "Fazalu Rahman";
-      const h1Element = document.querySelector('h1');
-
-      function shuffleString(str) {
-        const arr = str.split('');
-        for (let i = arr.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [arr[i], arr[j]] = [arr[j], arr[i]];
-        }
-        return arr.join('');
-      }
-
-      function updateHackerName() {
-        h1Element.textContent = shuffleString(originalName);
-      }
-
-     
-      const intervalId = setInterval(updateHackerName, 100);
-
-     
-      setTimeout(function () {
-        clearInterval(intervalId); 
-        h1Element.textContent = originalName;
-      }, 1000); 
-    });
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 class="main-head">Fazalu Rahman</h1>
-
-  <p class="main-para">
-    <hr>
-  </p>
-
-  <p class="main-para">
-    <span class="head-span"> Who am I:</span>  I’m seeking a dynamic and growth-focused career in the realm of Application security. I’m committed to continuously advancing my skills through
-    hands-on learning opportunities, collaborative efforts, and cutting-edge research. With strong communication skills, I’m always ready to collaborate
-    and adapt to dynamic work environments.
-  </p>
-
-  <hr>
-
-  <p class="main-para">
-   <span class="main-span">Experience:</span>  <br> <br>
-    <span class="head-span"> Security Tester at 9ine Consulting </span><br>
-    Application Security Architecture Rapid7 Insight
-    Tenable Nessus Analytical Skills Regular Expressions Security
-    Threat Analysis. Vulnerability Assessment Incident Response.
-    Vulnerability Communication Bash OWASP ISO 27001
-    General Data Protection Regulation (GDPR). API Testing Web
-    Application Security Cybersecurity Information Security
-    Vulnerability Management Penetration Testing Network
-    Security <br> <br>
-    <span class="head-span">Security Consultant Intern at SecureLayer7</span> <br>
-    Web Application Pentesting Black Box, Grey Box & White Box,API Pentesting,Infrastructure Pentesting Internal & External,Android Application Pentesting,Reporting and Documentation
-  </p>
-  <hr>
-  
-  <p class="main-para">
-    <span class="main-span">Opensource Contributions</span>  <br> <br>
-     
-     1.Given talk on the topic Cyber Awareness and
-     Privacy at emmanuel college vazhichal <br>
-     2.Given a session on the topic Art of information
-     gathering (OSINT) to students (webinar)
-     Security <br>
-     3.Given workshop on IoT Security , Wi-Fi Pentesting
-     and so on
-   </p>
-   <hr>
-   <p class="main-para">
-    <span class="main-span">Co-Circular activities</span>  <br> <br>
-     
-     1.Core volunteer at Seasides conference, Goa, India <br> <br>
-     2.Community volunteer at c0c0n, Kochi, India <br> <br>
-     3.Chapter lead at ResetHacker, Kerala, India
-   </p>
-   <hr>
-   <p class="main-para">
-    <span class="main-span">Achievements</span>  <br> <br>
-     
-     1.Successfully completed 95+ rooms and placed at level 11 on tryhackme platform <br> <br>
-     2.Secured 65th place out of 6483 teams in the Hackthebox cyber-Apocalypse 2023 CTF <br> <br>
-     3.Runner - Secured third place in the Hackthebox Cyber Beckal organized by RedTeam Hacker Academy
-   </p>
-   <hr>
-   <h1 class="main-head">Reach out to me at f4z41u@gmail.com</h1>
+  <canvas id="matrix-bg"></canvas>
+  <div class="overlay">
+    <header>
+      <h1 class="glitch" data-text="FAZALU RAHMAN">FAZALU RAHMAN</h1>
+      <p class="typewriter">Application Security | Hacker | CTF Player | AI Enthusiast</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/fazalu-rahman/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/f4z41u" target="_blank">GitHub</a>
+        <a href="https://medium.com/@f4z41u" target="_blank">Medium</a>
+        <a href="https://www.leaksnitch.com/" target="_blank">LeakSnitch</a>
+      </div>
+    </header>
+    <main>
+      <section class="profile-summary terminal">
+        <h2>&gt; Profile Summary</h2>
+        <p>Dynamic, growth-oriented Application Security professional with hands-on experience in Web, Network, Mobile, and Thick Client Pentesting. Skilled in VAPT, source code review, and script creation. Collaborative, critical thinker, and problem-solver. Tools: Burp Suite, Metasploit, Wireshark, Python, Java, JavaScript, Docker, Git, and more.</p>
+      </section>
+      <section class="achievements terminal">
+        <h2>&gt; Achievements</h2>
+        <ul>
+          <li>95+ rooms completed, Level 11 on TryHackMe</li>
+          <li>65th/6483 teams in HackTheBox Cyber-Apocalypse 2023 CTF (Team)</li>
+          <li>3rd place, HackTheBox Cyber Beckal (Team)</li>
+        </ul>
+      </section>
+      <section class="skills terminal">
+        <h2>&gt; Technical Skills & Tools</h2>
+        <div class="skills-grid">
+          <div><strong>Tools:</strong> Burp Suite, Metasploit, Nmap, Wireshark, Hashcat, SQLmap, Maltego, Nessus, Rapid7, Checkmarx, Semgrep, SonarQube</div>
+          <div><strong>Languages:</strong> Python, Java, JavaScript, Bash, HTML, PHP, MySQL, C, C++</div>
+          <div><strong>Libraries:</strong> Django, Flask</div>
+          <div><strong>Platforms:</strong> GNU/Linux, Windows</div>
+          <div><strong>Management:</strong> Git, GitHub, GitLab, LaTeX, MS Office, Docker</div>
+        </div>
+      </section>
+      <section class="projects terminal">
+        <h2>&gt; Projects & Talks</h2>
+        <ul>
+          <li>JARVIS – AI Model (Python)</li>
+          <li>LeakSnitch – Lightweight DLP browser extension</li>
+          <li>Talk: Cyber Awareness & Privacy @ Emmanuel College</li>
+          <li>Session: Art of Information Gathering (OSINT)</li>
+          <li>Workshop: IoT Security, Wi-Fi Pentesting</li>
+        </ul>
+      </section>
+      <section class="experience terminal">
+        <h2>&gt; Experience</h2>
+        <ul>
+          <li>Security Consultant Intern @ Securelayer7</li>
+          <li>Security Tester @ 9ine Consulting</li>
+        </ul>
+        <p>Skills: AppSec Architecture, Rapid7, Nessus, Regex, Threat Analysis, Incident Response, GDPR, API Testing, PenTesting, Network Security</p>
+      </section>
+      <section class="certifications terminal">
+        <h2>&gt; Certifications</h2>
+        <ul>
+          <li>Dante ProLab HackTheBox (HTBCERT-CF27E93DC1) - Oct 2024</li>
+          <li>P.O.O Mini Pro Lab HackTheBox (HTBCERT-B92067C92D) - Oct 2024</li>
+          <li>Certified Appsec Practitioner - Aug 2022</li>
+          <li>Certified Blockchain Practitioner - Aug 2022</li>
+          <li>Mobile Application Security (Cybrary) - Dec 2022</li>
+          <li>Python for Hacking - Jan 2021</li>
+        </ul>
+      </section>
+      <section class="community terminal">
+        <h2>&gt; Community & Co-Curricular</h2>
+        <ul>
+          <li>Core volunteer @ Seasides, Goa (2022–Present)</li>
+          <li>Community volunteer @ c0c0n, Kochi (2022–Present)</li>
+          <li>Chapter lead @ ResetHacker, Kerala (2022–Present)</li>
+          <li>Core Team - HackTheBox Kerala Chapter</li>
+        </ul>
+      </section>
+      <section class="softskills terminal">
+        <h2>&gt; Soft Skills & Hobbies</h2>
+        <ul>
+          <li>Communication, Critical Thinking, Team Management, Adaptability</li>
+          <li>Reading, Travel, Memes, Blogging on Medium</li>
+        </ul>
+      </section>
+      <section class="contact terminal">
+        <h2>&gt; Contact</h2>
+        <p>Email: <a href="mailto:f4z41u@gmail.com">f4z41u@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917510668982">+91 7510668982</a></p>
+        <p>Location: Bangalore, India</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Fazalu Rahman | Designed with <span class="glitch" data-text="&lt;3">&lt;3</span></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
