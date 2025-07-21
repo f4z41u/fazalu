@@ -1,0 +1,106 @@
+/* --- Additions for navbar, CTA, and home intro --- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: rgba(15, 17, 26, 0.98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 24px 0 var(--neon-blue);
+  border-bottom: 2px solid var(--neon-green);
+  padding: 0.5rem 0;
+  font-family: 'Share Tech Mono', monospace;
+  animation: flicker 2s infinite alternate;
+}
+.navbar a {
+  color: var(--neon-green);
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.2s, text-shadow 0.2s;
+  padding: 0.2em 0.5em;
+}
+.navbar a.active,
+.navbar a:hover {
+  color: var(--neon-pink);
+  text-shadow: 0 0 8px var(--neon-pink), 0 0 16px var(--neon-blue);
+}
+
+.overlay.home-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.cta {
+  margin-top: 2.5rem;
+}
+.cta-btn {
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+  color: #0f111a;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  padding: 0.8em 2.2em;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 24px 2px var(--neon-green);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+  animation: flicker 2s infinite alternate;
+}
+.cta-btn:hover {
+  background: linear-gradient(90deg, var(--neon-pink), var(--neon-yellow));
+  color: #0f111a;
+  box-shadow: 0 0 32px 8px var(--neon-pink);
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.hacker-alias {
+  color: var(--neon-pink);
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.cyber-title {
+  color: var(--neon-blue);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.terminal {
+  background: var(--terminal-bg);
+  border-left: 4px solid var(--neon-green);
+  border-radius: 8px;
+  margin: 2.5rem 0;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 32px 4px var(--neon-green) inset, 0 0 12px 2px var(--neon-blue);
+  font-size: 1.08rem;
+  line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.terminal:hover {
+  box-shadow: 0 0 48px 8px var(--neon-pink) inset, 0 0 24px 4px var(--neon-blue);
+}
+
+@media (max-width: 700px) {
+  .navbar { flex-direction: column; padding: 0.5rem 0; }
+  .navbar a { margin: 0.5rem 0; }
+  .overlay.home-intro { padding: 2vw 2vw; }
+  .terminal { padding: 1.2rem 0.7rem; margin: 1.2rem 0; }
+} 
